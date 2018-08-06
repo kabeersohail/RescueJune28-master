@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:padding="10dp"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="#2a3a48"
+    android:layout_gravity="center"
+    tools:context=".Settings">
+
+
+        <TextView
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/choose_your_map"/>
+
+        <Button
+            android:layout_gravity="center"
+            android:onClick="navybluelowsdk"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="navyblue"
+            android:id="@+id/navybluetext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:layout_gravity="center"
+            android:onClick="darklowsdk"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="dark"
+            android:id="@+id/darktext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <Button
+            android:layout_gravity="center"
+            android:onClick="normallowsdk"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="normal"
+            android:id="@+id/normaltext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_margin="10dp"
+                    android:id="@+id/darkmap"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="200dp"
+                    android:contentDescription="@string/app_name" />
+
+
+
+                <ImageView
+                    android:id="@+id/navyblue"
+                    android:layout_width="0dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/app_name" />
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:id="@+id/normal"
+            android:layout_width="160dp"
+            android:layout_height="0dp"
+            android:layout_margin="10dp"
+            android:contentDescription="@string/app_name"
+            android:padding="10dp" />
+
+</LinearLayout>
